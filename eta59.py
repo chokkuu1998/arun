@@ -1,12 +1,12 @@
-pp,qq=map(int,input().split())
-nn=0
-Lst=[]
-for i in range(pp):
-      Lst.append(input())
-for j in range(pp):
-      for pp in range(qq-1):
-            if(Lst[j][pp]!='R' and Lst[j][pp+1]!='R'):
-                  nn=nn+3
-            elif(Lst[j][pp]!='G' and Lst[j][pp+1]!='G'):
-                  n=n+5
-print(nn)
+bhh,sss = map(int,input().split())
+cost=0
+lat = []
+for i in range(bhh):
+      lat.append(input())
+for i in range(bhh):
+      for j in range(sss-1):
+            if lat[i][j] != 'R' and lat[i][j+1] != 'R' :
+                  cost+=3
+            elif lat[i][j] != 'G' and lat[i][j+1] != 'G':
+                  cost+=5
+print(cost)
