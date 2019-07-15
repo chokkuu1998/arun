@@ -7,5 +7,5 @@ while t1<len(rr1):
 	  mm1+=(ord(kk1[t1])-ord(rr1[t1]))
 	  t1+=1
 for t1 in range(t1,len(kk1)):
-	  m1+=ord(kk1[t1])-ord('a')+1
-print(m1)
+	  mm1+=ord(kk1[t1])-ord('a')+1
+print(mm1)
