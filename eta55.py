@@ -1,17 +1,15 @@
-nn=int(input())
-ll=list()
-cc=0
-kk=0
-rr=0
-for i in range(0,n+1):
-    kk=i
-    rr=0
-    while(kk!=0):
-        rr=rr+k%10
-        kk=kk//10
-    if((rr+i)==nn):
-        cc=cc+1
-        l.append(i)
-print(cc)
-for i in l:
-    print(i,end=" ")
+vv=int(input())
+skk=0
+rss=0
+mm=[]
+while skk<90 and skk<v:
+  s=0
+  for kk in str(vv-skk):
+    ss+=int(k)
+  if ss+(vv-ssk)==v:
+    rss+=1
+    mm.append(vv-skk)
+  skk+=1
+print(rss)
+for skk in mm:
+  print(skk)
