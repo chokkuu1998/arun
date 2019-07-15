@@ -1,7 +1,13 @@
-aaa=int(input())
-l1=[]
-for i in range(0,aaa):
-    l=list(map(int,input().split()))
-    for i in l:
-        l1.append(i)
-print(*sorted(l1))
+kk=int(input())
+p=[]
+r=[]
+for i in range(0,kk):
+    q=input()
+    p.append(q)
+for i in p:
+    j=i.split(" ")
+    for a in j:
+        r.append(int(a))
+r.sort()
+for z in r:
+    print(z,end=" ")
