@@ -1,21 +1,21 @@
-pp=input()
-ll=list(set(p))
-qq=1
-aa=0
+catt=input()
+ll1=list(set(catt))
+xen=1
+ant=0
 check=False
 while True:
-    ch=l[aa]
-    for j in range(0,len(pp)-qq):
-        if ch in pp[j:j+qq]:
+    ch=l1[ant]
+    for y in range(0,len(catt)-xen):
+        if ch in catt[y:y+xen]:
             check=True
         else:
             check=False
-            aa+=1
-            if aa>=len(l):
-             aa=0
-             qq+=1
+            ant=ant+1
+            if ant>=len(ll1):
+             ant=0
+             xen=xen+1
             break
 
     if check==True:
         break
-print(qq)
+print(xen)
