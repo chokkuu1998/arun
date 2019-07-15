@@ -7,5 +7,5 @@ for i in range(0,qtt2):
 for i in rr2:
     xx2=i[0]-1
     yy2=i[1]-1
-    print(math.gcd(ss2[xx2],ss2[yy2]))
+    print(map.gcd(ss2[xx2],ss2[yy2]))
     
