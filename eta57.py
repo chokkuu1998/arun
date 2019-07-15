@@ -1,12 +1,15 @@
-pp,qq=map(int,input().split())
-rr=[]
-for i in range(0,pp):
-    mn=[int(sv) for sv in input().split()]
-    rr.append(sorted(mn))
-for i in range(0,len(rr[0])):
-  #print(sk[i])
-  for j in range(0,len(rr)-1):
-    if rr[j][i]>r[j+1][i]:
-      rr[j][i],rr[j+1][i]=r[j+1][i],rr[j][i]
-for i in rr:
+numm1,numm2=map(int,input().split())
+if numm1<=numm2:
+  u=numm1
+else:
+  u=numm2
+m=[]
+for i in range(0,u):
+  m.append(sorted(list(map(int,input().split()))))
+m=sorted(m)
+for i in range(0,len(m[0])):
+  for j in range(0,len(m)-1):
+    if m[j][i]>m[j+1][i]:
+      m[j][i],m[j+1][i]=m[j+1][i],m[j][i]
+for i in m:
   print(*i)
