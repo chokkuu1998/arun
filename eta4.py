@@ -1,0 +1,5 @@
+bb,cc=map(int,input().split())
+aa=len(str(bb))
+lst=list(combinations(str(bb),aa-cc))
+lst=sorted(lst)
+print(*lst[0],sep='')
